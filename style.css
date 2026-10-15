@@ -60,3 +60,7 @@ footer{background:#0a1220;color:#9fb0c6;padding:36px 0;font-size:.92rem}footer .
 .wa{width:58px;height:58px;padding:0;border-radius:50%;display:grid;place-items:center;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));transition:transform .2s}
 .wa svg{width:32px;height:32px}.wa:hover{transform:scale(1.08)}
 @media(prefers-reduced-motion:reduce){.wa{transition:none}.wa:hover{transform:none}}
+
+/* floating WhatsApp: round icon button (final) */
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;width:58px;height:58px;padding:0;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.28);transition:transform .2s;text-decoration:none}
+.wa svg{width:30px;height:30px;flex:none;display:block;fill:currentColor}.wa:hover{transform:scale(1.08)}
