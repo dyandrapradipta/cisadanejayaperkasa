@@ -98,3 +98,17 @@ footer{background:#0a1220;color:#9fb0c6;padding:36px 0;font-size:.92rem}footer .
 .slide.on.anim{transition:transform .7s cubic-bezier(.65,0,.35,1),visibility 0s}
 .slide.on .sc{animation:up .8s .35s both}
 @keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* ISO + kegiatan */
+.iso-g{display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:40px;align-items:start}
+@media(max-width:760px){.iso-g{grid-template-columns:1fr}.cert{max-width:320px;margin:0 auto}}
+.zoom{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.cert .zoom img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px rgba(15,27,45,.15)}
+.iso-g h2{margin-top:0}.iso-g p{margin:0 0 18px;color:var(--mut)}
+.trust{padding:0;background:#fff;border-bottom:1px solid var(--line)}
+.trust .w{display:flex;align-items:center;justify-content:center;gap:14px;padding-top:16px;padding-bottom:16px;color:var(--red)}
+.trust svg{flex:none}.trust p{margin:0;color:var(--ink);font-size:.97rem}.trust a{color:var(--red);font-weight:600}
+dialog{border:0;padding:0;background:transparent;max-width:94vw;max-height:94vh;overflow:visible}
+dialog::backdrop{background:rgba(5,10,20,.82)}
+dialog img{display:block;max-width:94vw;max-height:90vh;width:auto;height:auto;border-radius:8px;background:#fff}
+dialog .x{position:absolute;top:-14px;right:-14px;width:38px;height:38px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:1.6rem;line-height:1;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.4)}
